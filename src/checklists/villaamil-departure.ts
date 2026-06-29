@@ -1,0 +1,140 @@
+import type { Checklist } from '@/types/checklist'
+
+export const villaamilDeparture: Checklist = {
+  id: 'departure',
+  title: 'Cierre del piso',
+  subtitle: 'Villaamil · Madrid',
+  description: 'Checklist de cierre antes de salir de Madrid',
+  icon: '🔒',
+  completionMessage: '¡El piso ha quedado cerrado correctamente! Buen viaje.',
+  notesLabel: 'Notas del cierre',
+  notesPlaceholder: 'Estado del piso, incidencias, recordatorios para la próxima vez…',
+  sections: [
+    {
+      id: 'dormitorio',
+      title: 'Dormitorio',
+      icon: '🛏',
+      order: 1,
+      tasks: [
+        { id: 'dorm-1', title: 'Desenchufar los ventiladores', critical: true },
+        {
+          id: 'dorm-2',
+          title: 'Asegurarse de que TODOS los controles remotos de los ventiladores estén en sus soportes',
+        },
+        { id: 'dorm-3', title: 'Desenchufar el router' },
+        {
+          id: 'dorm-4',
+          title: 'Guardar el router en la gaveta de mi cama',
+          note: 'En la gaveta más cercana al armario está la caja del router',
+        },
+        { id: 'dorm-5', title: 'Revisar que no quede ningún aparato enchufado innecesariamente' },
+        { id: 'dorm-6', title: 'Apagar todas las luces', critical: true },
+      ],
+    },
+    {
+      id: 'bano',
+      title: 'Baño',
+      icon: '🚿',
+      order: 2,
+      tasks: [
+        { id: 'bano-1', title: 'Comprobar que todos los grifos están cerrados', critical: true },
+        { id: 'bano-2', title: 'Revisar que no haya fugas' },
+        { id: 'bano-3', title: 'Apagar el calentador de agua', critical: true },
+      ],
+    },
+    {
+      id: 'salon',
+      title: 'Salón',
+      icon: '🛋',
+      order: 3,
+      tasks: [
+        { id: 'salon-1', title: 'Revisar que no quede ningún electrodoméstico enchufado' },
+        { id: 'salon-2', title: 'Cerrar todas las ventanas', critical: true },
+        { id: 'salon-3', title: 'Bajar las persianas' },
+      ],
+    },
+    {
+      id: 'cocina',
+      title: 'Cocina',
+      icon: '🍽',
+      order: 4,
+      tasks: [
+        { id: 'coc-1', title: 'Comprobar que no quedan alimentos perecederos' },
+        { id: 'coc-2', title: 'Vaciar el frigorífico' },
+        { id: 'coc-3', title: 'Limpiar el interior del frigorífico' },
+        { id: 'coc-4', title: 'Poner el frigorífico en 0' },
+        { id: 'coc-5', title: 'Dejar las puertas del frigorífico abiertas' },
+        { id: 'coc-6', title: 'Vaciar el congelador si procede' },
+        { id: 'coc-7', title: 'Desenchufar el air fryer' },
+        { id: 'coc-8', title: 'Desenchufar el microondas y dejar la puerta entreabierta' },
+        { id: 'coc-9', title: 'Revisar que no quede ningún electrodoméstico enchufado' },
+        { id: 'coc-10', title: 'Revisar grifos de cocina', critical: true },
+      ],
+    },
+    {
+      id: 'lavadero',
+      title: 'Lavadero',
+      icon: '🧺',
+      order: 5,
+      tasks: [
+        { id: 'lav-1', title: 'Vaciar la lavadora' },
+        { id: 'lav-2', title: 'Dejar la puerta de la lavadora entreabierta' },
+        { id: 'lav-3', title: 'Vaciar el lavavajillas si aplica' },
+        { id: 'lav-4', title: 'Dejar la puerta del lavavajillas entreabierta' },
+        {
+          id: 'lav-5',
+          title: 'Cerrar las llaves de paso de la lavadora y el lavavajillas si existen',
+        },
+      ],
+    },
+    {
+      id: 'balcon',
+      title: 'Balcón',
+      icon: '🌿',
+      order: 6,
+      tasks: [
+        { id: 'bal-1', title: 'Cerrar la puerta del balcón', critical: true },
+        { id: 'bal-2', title: 'Comprobar persianas del balcón' },
+      ],
+    },
+    {
+      id: 'instalaciones',
+      title: 'Instalaciones generales',
+      icon: '💧',
+      order: 7,
+      tasks: [
+        {
+          id: 'gen-1',
+          title: 'Cerrar la llave general del agua',
+          critical: true,
+          note: 'Preguntarle a Carlos dónde está',
+        },
+        { id: 'gen-2', title: 'Sacar toda la basura' },
+      ],
+    },
+    {
+      id: 'puerta',
+      title: 'Puerta principal',
+      icon: '🔒',
+      order: 8,
+      tasks: [
+        { id: 'puer-1', title: 'Cerrar la puerta principal', critical: true },
+        { id: 'puer-2', title: 'Dar todas las vueltas de llave', critical: true },
+        { id: 'puer-3', title: 'Verificar que la puerta ha quedado bien cerrada' },
+      ],
+    },
+    {
+      id: 'revision',
+      title: 'Última revisión',
+      icon: '✅',
+      order: 9,
+      tasks: [
+        { id: 'rev-1', title: 'Recorrer todas las habitaciones' },
+        { id: 'rev-2', title: 'Comprobar una última vez luces, ventanas y enchufes' },
+        { id: 'rev-3', title: 'Llevar todas las llaves necesarias' },
+        { id: 'rev-4', title: 'Grabar un vídeo del recorrido final del piso', critical: true },
+        { id: 'rev-5', title: 'Hacer una foto de la puerta cerrada antes de salir', critical: true },
+      ],
+    },
+  ],
+}
