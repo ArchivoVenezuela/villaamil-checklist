@@ -1,7 +1,5 @@
-import type { Checklist } from '@/types/checklist'
-
 interface NotesFieldProps {
-  checklist: Checklist
+  checklist: { notesLabel: string; notesPlaceholder: string }
   value: string
   onChange: (val: string) => void
 }
